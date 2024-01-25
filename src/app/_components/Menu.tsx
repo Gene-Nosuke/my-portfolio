@@ -1,9 +1,5 @@
 import * as React from "react";
 
-type classProps = {
-  name: string; // ユーザーの名前
-};
-
 const Menu = () => {
   const menuChildlen = ["Gallery", "About Me", "Community", "Blog"];
 
