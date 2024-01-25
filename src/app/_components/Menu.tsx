@@ -16,7 +16,7 @@ const Menu = () => {
         </li>
         {menuChildlen.map((item) => {
           return (
-            <li className="flex justify-center items-center">
+            <li key={item} className="flex justify-center items-center">
               <a
                 href={`/${item}`}
                 className="relative py-1 px-2 duration-300 rounded-xl hover:bg-slate-200 flex justify-center before:absolute before:bottom-0 before:w-2 before:hover:w-full before:border-rose-400 before:border-b-2 before:duration-300 "
