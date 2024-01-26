@@ -7,10 +7,6 @@ const page = () => {
   return (
     <>
       <ViewWorks />
-      <ViewWorks />
-      <ViewWorks />
-      <ViewWorks />
-      <ViewWorks />
     </>
   );
 };

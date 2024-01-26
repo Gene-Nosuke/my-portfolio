@@ -17,7 +17,7 @@ const Header = () => {
                   menuStatus ? setMenuStatus(false) : setMenuStatus(true);
                   console.log(menuStatus);
                 }}
-                className="w-12 h-8 text-slate-600 hover:text-slate-500 bg-slate-300 hover:bg-slate-200 border-2 border-slate-300 rounded-full duration-200 "
+                className="w-12 h-8 text-slate-600 hover:text-slate-500 bg-slate-300 hover:bg-slate-200 border-2 border-slate-200 hover:border-slate-300 rounded-full duration-200 "
               >
                 {menuStatus && "I"}
                 {menuStatus || "O"}

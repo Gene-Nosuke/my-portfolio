@@ -1,13 +1,19 @@
 import * as React from "react";
 import CardOfWork from "./CardOfWork";
+import datas from "../_db/works";
 
 const ViewWorks = () => {
   return (
-    <div className=" m-8 p-8 bg-slate-100 rounded-xl grid grid-cols-2 gap-4">
-      <CardOfWork />
-      <CardOfWork />
-      <CardOfWork />
-      <CardOfWork />
+    <div className=" m-8 p-8 bg-slate-100 rounded-xl grid grid-cols-2 gap-8">
+      {datas.map((data) => {
+        return (
+          <CardOfWork
+            title={data.title}
+            describtion={data.describtion}
+            link={data.link}
+          />
+        );
+      })}
     </div>
   );
 };

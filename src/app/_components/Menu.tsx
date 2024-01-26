@@ -4,7 +4,10 @@ const Menu = () => {
   const menuChildlen = ["Gallery", "About Me", "Community", "Blog"];
 
   return (
-    <div className=" absolute top-16 w-full bg-slate-100 border-b-2 border-slate-300 shadow-sm flex flex-col justify-center items-center">
+    <div
+      id="Nav"
+      className=" absolute top-16 w-full bg-slate-100 border-b-2 border-slate-300 shadow-sm flex flex-col justify-center items-center"
+    >
       <ul className="w-full p-2 flex justify-center items-center gap-6">
         <li className="flex justify-center items-center">
           <a
