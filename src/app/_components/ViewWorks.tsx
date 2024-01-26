@@ -5,9 +5,10 @@ import datas from "../_db/works";
 const ViewWorks = () => {
   return (
     <div className=" m-8 p-8 bg-slate-100 rounded-xl grid grid-cols-2 gap-8">
-      {datas.map((data) => {
+      {datas.map((data, i) => {
         return (
           <CardOfWork
+            key={i}
             title={data.title}
             describtion={data.describtion}
             link={data.link}

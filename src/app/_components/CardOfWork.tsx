@@ -13,11 +13,8 @@ interface DatasOfWorks {
 }; */
 
 const CardOfWork: React.FC<DatasOfWorks> = (data) => {
-  const randomValue = Math.random();
-
   return (
     <a
-      key={randomValue}
       href={data.link}
       className=" w-72 h-36 p-6 rounded-lg bg-slate-100 shadow-md"
     >

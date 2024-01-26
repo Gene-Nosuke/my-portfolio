@@ -13,9 +13,10 @@ const Pickups = () => {
     <div className="w-2/3 p-6 rounded-xl bg-slate-100">
       <h2 className="mb-6 ml-6 font-semibold">Top picks</h2>
       <div className="flex justify-center items-center gap-4">
-        {pickup.map((data: any) => {
+        {pickup.map((data: any, i) => {
           return (
             <CardOfWork
+              key={i}
               title={data.title}
               describtion={data.describtion}
               link={data.link}
