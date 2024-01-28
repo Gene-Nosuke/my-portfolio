@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Menu from "../Menu";
+import Menu from "./Menu";
 
 const Header = () => {
   const [menuStatus, setMenuStatus] = React.useState(true);
@@ -10,7 +10,7 @@ const Header = () => {
     <div className="fixed top-0 left-0 w-full flex justify-center">
       <div className="relative w-full">
         <header className="absolute left-0 top-0 z-50 w-full h-16 bg-slate-100 border-b-2 border-slate-300 shadow-sm flex justify-center items-center">
-          <div className="relative left-0 top-0 w-full max-w-[1000px] h-16 flex justify-center">
+          <div className="relative left-0 top-0 w-full max-w-5xl h-16 flex justify-center">
             <div className="absolute left-0 w-28 h-16 flex justify-center items-center">
               <button
                 onClick={() => {

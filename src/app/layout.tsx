@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Header from "./_components/Header/Header";
+import Header from "./_components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
         }
       >
         <Header />
-        <main className="w-full max-w-[1000px] h-fit pt-28 flex flex-col items-center ">
+        <main className="w-full max-w-6xl h-fit pt-28 p-4 flex flex-col items-center ">
           {children}
         </main>
         <SpeedInsights />

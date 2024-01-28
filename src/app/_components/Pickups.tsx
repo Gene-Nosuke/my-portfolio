@@ -10,9 +10,15 @@ const Pickups = () => {
   const pickup = items;
 
   return (
-    <div className="w-2/3 p-6 rounded-xl bg-slate-100">
-      <h2 className="mb-6 ml-6 font-semibold">Top picks</h2>
-      <div className="flex justify-center items-center gap-4">
+    <div
+      className={
+        " w-full max-w-xl sm:max-w-2xl md:max-w-5xl p-4 rounded-xl bg-slate-100 flex flex-col justify-center items-center "
+      }
+    >
+      <h2 className="mb-4 font-semibold">Top picks</h2>
+      <div
+        className={"w-full flex flex-wrap justify-center items-center gap-4"}
+      >
         {pickup.map((data: any, i) => {
           return (
             <CardOfWork
