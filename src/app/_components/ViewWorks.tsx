@@ -4,17 +4,22 @@ import datas from "../_db/works";
 
 const ViewWorks = () => {
   return (
-    <div className=" m-8 p-8 bg-slate-100 rounded-xl flex flex-wrap justify-center items-center gap-8">
-      {datas.map((data, i) => {
-        return (
-          <CardOfWork
-            key={i}
-            title={data.title}
-            describtion={data.describtion}
-            link={data.link}
-          />
-        );
-      })}
+    <div className="w-full p-4 mt-8 rounded-xl bg-slate-100 shadow-md flex flex-col items-center justify-center">
+      <h2 className="mb-4 p-4 text-lg font-semibold text-rose-700 rounded-md bg-rose-200">
+        Works
+      </h2>
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 grid- gap-4">
+        {datas.map((data, i) => {
+          return (
+            <CardOfWork
+              key={i}
+              title={data.title}
+              describtion={data.describtion}
+              link={data.link}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
