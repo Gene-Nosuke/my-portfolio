@@ -1,6 +1,6 @@
 import * as React from "react";
 import CardOfWork from "./CardOfWork";
-import datas from "../_db/works";
+import data_works from "../_db/works";
 
 const ViewWorks = () => {
   return (
@@ -9,7 +9,7 @@ const ViewWorks = () => {
         Works
       </h2>
       <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 grid- gap-4">
-        {datas.map((data, i) => {
+        {data_works.map((data, i) => {
           return (
             <CardOfWork
               key={i}
