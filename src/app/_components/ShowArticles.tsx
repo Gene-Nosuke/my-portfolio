@@ -1,7 +1,7 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
 import ArticleCard from "./ArticleCard";
 import getArticles from "../_db/data_articles";
+import generateUUID from "../_utils/scripts";
 
 const ShowArticles = () => {
   const articles = getArticles();
@@ -14,7 +14,7 @@ const ShowArticles = () => {
         {articles.map((article) => {
           return (
             <ArticleCard
-              key={uuidv4()}
+              key={generateUUID()}
               title={article.title}
               text={article.text}
             />
