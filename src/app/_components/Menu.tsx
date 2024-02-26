@@ -4,7 +4,6 @@ const Menu = () => {
   const menuChildlen = [
     ["Top", "/"],
     ["Gallery", "/Gallery"],
-    ["About Me", "/About Me"],
     ["Blog", "/Blog"],
   ];
 
@@ -15,7 +14,7 @@ const Menu = () => {
         " absolute top-16 w-full bg-slate-100 border-b-2 border-slate-300 shadow-sm flex justify-center items-center"
       }
     >
-      <ul className="w-full max-w-xl p-2 flex justify-around items-center ">
+      <ul className="w-full max-w-md p-2 flex justify-around items-center ">
         {menuChildlen.map((item) => {
           return (
             <li key={item[1]} className="flex justify-center items-center">

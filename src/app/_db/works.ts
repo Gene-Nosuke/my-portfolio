@@ -1,4 +1,4 @@
-const datas = [
+const data_works = [
   {
     title: "AirouTalk",
     describtion: "Let's begin to talk with cute Airou.",
@@ -19,7 +19,7 @@ const datas = [
     describtion: "This is my first project built with my own skills",
     link: "http://niboshingo.s239.xrea.com/",
   },
-  
+
   {
     title: "AirouTalk",
     describtion: "Let's begin to talk with cute Airou.",
@@ -40,7 +40,7 @@ const datas = [
     describtion: "This is my first project built with my own skills",
     link: "http://niboshingo.s239.xrea.com/",
   },
-  
+
   {
     title: "AirouTalk",
     describtion: "Let's begin to talk with cute Airou.",
@@ -61,7 +61,7 @@ const datas = [
     describtion: "This is my first project built with my own skills",
     link: "http://niboshingo.s239.xrea.com/",
   },
-  
+
   {
     title: "AirouTalk",
     describtion: "Let's begin to talk with cute Airou.",
@@ -82,7 +82,6 @@ const datas = [
     describtion: "This is my first project built with my own skills",
     link: "http://niboshingo.s239.xrea.com/",
   },
-  
 ];
 
-export default datas;
+export default data_works;

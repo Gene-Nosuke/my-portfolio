@@ -11,8 +11,8 @@ import Pickups from "./_components/Pickups";
 const Top = () => {
   return (
     <>
-      <SimplyAboutMe />
       <Pickups />
+      <SimplyAboutMe />
     </>
   );
 };

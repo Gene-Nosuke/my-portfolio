@@ -1,24 +1,24 @@
 import * as React from "react";
 import CardOfWork from "../_components/CardOfWork";
-import datas from "../_db/works";
+import data_works from "../_db/works";
 
 const Pickups = () => {
   let items: Array<any> = [];
   for (let i = 0; i <= 2; i++) {
-    items.push(datas[i]);
+    items.push(data_works[i]);
   }
   const pickup = items;
 
   return (
     <div
       className={
-        " w-full max-w-xl sm:max-w-2xl md:max-w-5xl p-4 rounded-xl bg-slate-100 flex flex-col justify-center items-center "
+        " w-full mt-8 p-4 rounded-xl bg-slate-100 shadow-md flex flex-col justify-center items-center "
       }
     >
-      <h2 className="mb-4 font-semibold">Top picks</h2>
-      <div
-        className={"w-full flex flex-wrap justify-center items-center gap-4"}
-      >
+      <h2 className="mb-4 p-4 text-lg font-semibold text-rose-700 rounded-md bg-rose-200">
+        Top picks
+      </h2>
+      <div className={"w-full grid grid-cols-2 md:grid-cols-3 gap-4"}>
         {pickup.map((data: any, i) => {
           return (
             <CardOfWork
